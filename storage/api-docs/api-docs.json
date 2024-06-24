@@ -1,0 +1,28 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Application API serivce",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/profile": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "Get user profile",
+                "description": "This can only be done by the logged in user.",
+                "operationId": "index",
+                "requestBody": {
+                    "description": "Get user object",
+                    "required": true
+                },
+                "responses": {
+                    "default": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        }
+    }
+}
